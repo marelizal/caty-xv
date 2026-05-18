@@ -160,39 +160,39 @@
 
         .countdown {
             display: flex;
-            gap: 15px;
+            gap: 6px;
             margin-bottom: 30px;
-            flex-wrap: wrap;
             justify-content: center;
+            flex-wrap: nowrap;
         }
 
         .countdown-item {
             text-align: center;
-            min-width: 70px;
+            min-width: 50px;
         }
 
         .countdown-item .num {
             font-family: 'Cinzel', serif;
-            font-size: 2.5rem;
+            font-size: 1.8rem;
             color: var(--white);
             display: block;
             line-height: 1;
         }
 
         .countdown-item .label {
-            font-size: 0.75rem;
+            font-size: 0.6rem;
             color: var(--white-dim);
             text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-top: 5px;
+            letter-spacing: 1px;
+            margin-top: 3px;
         }
 
         .countdown-sep {
             font-family: 'Cinzel', serif;
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: var(--gold);
             align-self: flex-start;
-            margin-top: 5px;
+            margin-top: 3px;
         }
 
         .mensaje-hero {
@@ -719,7 +719,10 @@
         @media (max-width: 400px) {
             .nombre { font-size: 3.5rem; }
             .card-frame { padding: 25px 18px; }
-            .countdown-item .num { font-size: 2rem; }
+            .countdown-item .num { font-size: 1.5rem; }
+            .countdown-item { min-width: 40px; }
+            .countdown { gap: 4px; }
+            .countdown-sep { font-size: 1.2rem; }
         }
 
         /* ===== FADE IN ANIMATION ===== */

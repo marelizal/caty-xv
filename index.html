@@ -742,12 +742,12 @@
 <body>
     <canvas id="particles-canvas"></canvas>
 
-    <!-- YouTube Player -->
+    <!-- Audio Player -->
     <div class="audio-player" id="audioPlayer" style="display:none;">
         <button id="audioToggle"><i class="fas fa-play"></i></button>
         <span>Música de fondo</span>
     </div>
-    <div id="youtubePlayer" style="position:absolute;left:-9999px;width:0;height:0;"></div>
+    <audio id="mainAudio" src="tema.mp3" loop></audio>
 
     <!-- Nav Dots -->
     <div class="nav-dots" id="navDots"></div>
@@ -813,17 +813,17 @@
                     </div>
                     <h2 class="card-title">Ubicación</h2>
                     <p class="card-text" style="margin-bottom:15px;">
-                        Av. Jujuy al 3500
+                        Av jujuy al 500
                     </p>
                     <div class="map-container">
                         <iframe
-                            src="https://maps.google.com/maps?q=Av.+Jujuy+3500&output=embed"
+                            src="https://maps.google.com/maps?q=Av.+jujuy+500&output=embed"
                             allowfullscreen=""
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=Av.+Jujuy+3500" target="_blank" class="card-btn" style="margin-top:15px;">
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=Av.+jujuy+500" target="_blank" class="card-btn" style="margin-top:15px;">
                         <i class="fas fa-directions" style="margin-right:8px;"></i>COMO LLEGAR
                     </a>
                 </div>
@@ -836,7 +836,7 @@
             <div class="sparkle-top" id="sparkleTop5"></div>
             <div class="fade-in">
                 <div class="photo-frame">
-                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=600&fit=crop&crop=face" alt="Catherine" loading="lazy">
+                    <img src="Fotos_Cathi/Fotos Cathi/1000037131.jpg" alt="Catherine" loading="lazy">
                 </div>
             </div>
             <div class="sparkle-bottom" id="sparkleBottom5"></div>
@@ -916,7 +916,7 @@
             <div class="sparkle-top" id="sparkleTop7"></div>
             <div class="fade-in">
                 <div class="photo-frame">
-                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&h=600&fit=crop&crop=face" alt="Catherine" loading="lazy">
+                    <img src="Fotos_Cathi/Fotos Cathi/1000037132.jpg" alt="Catherine" loading="lazy">
                 </div>
             </div>
             <div class="sparkle-bottom" id="sparkleBottom7"></div>
@@ -932,21 +932,6 @@
                     </div>
                     <h2 class="card-title">Dress Code</h2>
                     <p class="dress-code-main">ELEGANTE SPORT</p>
-                    <p class="dress-prohibido">Prohibidos vestidos blancos o colores semejantes</p>
-                    <div class="dress-suggestions">
-                        <div class="dress-item">
-                            <i class="fas fa-female"></i>
-                            <span>Vestido corto<br>o largo</span>
-                        </div>
-                        <div class="dress-item">
-                            <i class="fas fa-male"></i>
-                            <span>Camisa<br>y pantalón</span>
-                        </div>
-                        <div class="dress-item">
-                            <i class="fas fa-shoe-prints"></i>
-                            <span>Zapatos<br>elegantes</span>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="sparkle-bottom" id="sparkleBottom8"></div>
@@ -957,7 +942,7 @@
             <div class="sparkle-top" id="sparkleTop9"></div>
             <div class="fade-in">
                 <div class="photo-frame">
-                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&h=600&fit=crop&crop=face" alt="Catherine" loading="lazy">
+                    <img src="Fotos_Cathi/Fotos Cathi/1000037133.jpg" alt="Catherine" loading="lazy">
                 </div>
             </div>
             <div class="sparkle-bottom" id="sparkleBottom9"></div>
@@ -994,16 +979,6 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label>Cantidad de personas</label>
-                            <select id="rsvpCantidad">
-                                <option value="1">1 persona</option>
-                                <option value="2">2 personas</option>
-                                <option value="3">3 personas</option>
-                                <option value="4">4 personas</option>
-                                <option value="5+">5 o más</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
                             <label>Mensaje para Catherine (opcional)</label>
                             <textarea id="rsvpMsg" rows="3" placeholder="Escribe un mensaje..."></textarea>
                         </div>
@@ -1016,7 +991,28 @@
             <div class="sparkle-bottom" id="sparkleBottom10"></div>
         </section>
 
-        <!-- SECTION 10: CLOSING -->
+        <!-- SECTION 10: REGALO -->
+        <section class="gift-section" id="sec-gift" style="background: linear-gradient(180deg, var(--navy) 0%, var(--navy-light) 100%);">
+            <div class="sparkle-top" id="sparkleTopGift"></div>
+            <div class="fade-in">
+                <div class="card-frame">
+                    <div class="icon-circle">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h2 class="card-title">Regalos</h2>
+                    <p class="card-text" style="margin-bottom:20px;">
+                        Si deseas regalarme algo, puedes hacerlo mediante transferencia bancaria:
+                    </p>
+                    <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1);">
+                        <p style="font-size: 0.8rem; color: var(--white-dim); margin-bottom: 5px;">ALIAS</p>
+                        <p style="font-size: 1.2rem; letter-spacing: 2px; color: var(--gold-light); font-weight: 600;">cathidana13</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sparkle-bottom" id="sparkleBottomGift"></div>
+        </section>
+
+        <!-- SECTION 11: CLOSING -->
         <section class="closing-section" id="sec-closing">
             <div class="sparkle-top" id="sparkleTop11"></div>
             <div class="fade-in">
@@ -1031,7 +1027,14 @@
 
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script>
+        // ===== SUPABASE CONFIG =====
+        // Reemplaza 'TU_SUPABASE_ANON_KEY' con la clave anónima de tu proyecto de Supabase
+        const SUPABASE_URL = 'https://hhjjjmyfshsdlyjiheqj.supabase.co';
+        const SUPABASE_KEY = 'TU_SUPABASE_ANON_KEY'; 
+        const _supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
         // ===== PARTICLES SYSTEM =====
         const canvas = document.getElementById('particles-canvas');
         const ctx = canvas.getContext('2d');
@@ -1071,7 +1074,6 @@
                 ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
                 ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`;
                 ctx.fill();
-                // Glow for larger particles
                 if (this.size > 1.5) {
                     ctx.beginPath();
                     ctx.arc(this.x, this.y, this.size * 3, 0, Math.PI * 2);
@@ -1108,6 +1110,8 @@
             generateSparkles('sparkleTop' + i, 15);
             generateSparkles('sparkleBottom' + i, 15);
         }
+        generateSparkles('sparkleTopGift', 15);
+        generateSparkles('sparkleBottomGift', 15);
 
         // ===== COUNTDOWN =====
         const targetDate = new Date('2026-06-27T21:00:00').getTime();
@@ -1181,98 +1185,74 @@
             });
         });
 
-        document.getElementById('saveMusicBtn').addEventListener('click', () => {
+        document.getElementById('saveMusicBtn').addEventListener('click', async () => {
             if (selectedGenres.size === 0) {
                 alert('¡Selecciona al menos un género musical!');
                 return;
             }
             const genres = Array.from(selectedGenres).join(', ');
             const customSong = document.getElementById('customSongInput').value.trim();
-            let msg = '¡Genial! Has seleccionado: ' + genres;
-            if (customSong) {
-                msg += '\n\nCanción sugerida: ' + customSong;
+            
+            try {
+                const { error } = await _supabase.from('temas_musicales').insert([
+                    { generos: genres, cancion_sugerida: customSong }
+                ]);
+                if (error) throw error;
+                
+                let msg = '¡Genial! Has seleccionado: ' + genres;
+                if (customSong) {
+                    msg += '\n\nCanción sugerida: ' + customSong;
+                }
+                msg += '\n\nTu selección ha sido guardada para la fiesta de Catherine.';
+                alert(msg);
+            } catch (err) {
+                console.error('Error saving music:', err);
+                alert('Hubo un problema al guardar tu selección. Asegúrate de configurar la clave de Supabase.');
             }
-            msg += '\n\nTu selección ha sido guardada para la fiesta de Catherine.';
-            alert(msg);
         });
 
         // ===== RSVP FORM =====
-        document.getElementById('rsvpForm').addEventListener('submit', (e) => {
+        document.getElementById('rsvpForm').addEventListener('submit', async (e) => {
             e.preventDefault();
             const name = document.getElementById('rsvpName').value;
             const asistencia = document.querySelector('input[name="asistencia"]:checked').value;
-            const cantidad = document.getElementById('rsvpCantidad').value;
             const msg = document.getElementById('rsvpMsg').value;
 
-            const status = asistencia === 'si' ? 'confirmó su asistencia' : 'no podrá asistir';
-            const personas = asistencia === 'si' ? ` (${cantidad} ${cantidad === '1' ? 'persona' : 'personas'})` : '';
+            try {
+                const { error } = await _supabase.from('asistentes').insert([
+                    { nombre: name, asistira: asistencia === 'si', mensaje: msg }
+                ]);
+                if (error) throw error;
 
-            alert(`¡Gracias ${name}!\n\nHas ${status}${personas}.\n\nCatherine recibirá tu confirmación.`);
-            document.getElementById('rsvpForm').reset();
+                const status = asistencia === 'si' ? 'confirmó su asistencia' : 'no podrá asistir';
+                alert(`¡Gracias ${name}!\n\nHas ${status}.\n\nCatherine recibirá tu confirmación.`);
+                document.getElementById('rsvpForm').reset();
+            } catch (err) {
+                console.error('Error saving RSVP:', err);
+                alert('Hubo un problema al enviar tu confirmación. Asegúrate de configurar la clave de Supabase.');
+            }
         });
 
-        // ===== PLAY BUTTON / YOUTUBE =====
-        let ytPlayer = null;
-        let ytReady = false;
-        let audioPlaying = false;
-        let ytLoading = false;
+        // ===== AUDIO PLAYER =====
+        const mainAudio = document.getElementById('mainAudio');
         const playBtn = document.getElementById('playBtn');
         const audioPlayer = document.getElementById('audioPlayer');
         const audioToggle = document.getElementById('audioToggle');
-        const YT_VIDEO_ID = 'vfpgpf6QVnI';
-
-        function onYouTubeIframeAPIReady() {
-            ytPlayer = new YT.Player('youtubePlayer', {
-                videoId: YT_VIDEO_ID,
-                playerVars: {
-                    autoplay: 0,
-                    controls: 0,
-                    loop: 1,
-                    playlist: YT_VIDEO_ID,
-                    enablejsapi: 1,
-                },
-                events: {
-                    onReady: () => {
-                        ytReady = true;
-                        ytPlayer.setVolume(100);
-                    },
-                    onStateChange: (e) => {
-                        if (e.data === YT.PlayerState.ENDED) {
-                            ytPlayer.playVideo();
-                        }
-                    }
-                }
-            });
-        }
-
-        function loadYouTubeAPI() {
-            if (window.YT) { onYouTubeIframeAPIReady(); return; }
-            ytLoading = true;
-            window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
-            const tag = document.createElement('script');
-            tag.src = 'https://www.youtube.com/iframe_api';
-            document.head.appendChild(tag);
-        }
-
-        loadYouTubeAPI();
+        let audioPlaying = false;
 
         function togglePlay() {
-            if (!ytReady) { return; }
             audioPlayer.style.display = 'flex';
             audioPlaying = !audioPlaying;
             if (audioPlaying) {
-                ytPlayer.playVideo();
+                mainAudio.play();
             } else {
-                ytPlayer.pauseVideo();
+                mainAudio.pause();
             }
             audioToggle.innerHTML = audioPlaying ? '<i class="fas fa-pause"></i>' : '<i class="fas fa-play"></i>';
         }
 
         playBtn.addEventListener('click', togglePlay);
-
         audioToggle.addEventListener('click', togglePlay);
-
-
     </script>
 </body>
 </html>

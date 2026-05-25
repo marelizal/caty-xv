@@ -1248,7 +1248,10 @@
             } else {
                 mainAudio.pause();
             }
-            audioToggle.innerHTML = audioPlaying ? '<i class="fas fa-pause"></i>' : '<i class="fas fa-play"></i>';
+            
+            const iconClass = audioPlaying ? 'fas fa-pause' : 'fas fa-play';
+            audioToggle.innerHTML = `<i class="${iconClass}"></i>`;
+            playBtn.innerHTML = `<i class="${iconClass}"></i>`;
         }
 
         playBtn.addEventListener('click', togglePlay);

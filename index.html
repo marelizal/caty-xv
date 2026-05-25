@@ -326,6 +326,32 @@
             text-align: center;
         }
 
+        .music-option:hover, .music-option.selected {
+            border-color: var(--gold);
+            background: rgba(201,169,110,0.1);
+        }
+
+        .music-option.selected {
+            border-color: var(--gold);
+            background: rgba(201,169,110,0.2);
+        }
+
+        .music-option.selected .check-circle {
+            background: var(--gold);
+            border-color: var(--gold);
+        }
+
+        .music-option.selected .check-circle i {
+            opacity: 1;
+        }
+
+        .check-circle i {
+            font-size: 10px;
+            color: var(--navy);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
         .music-info .genre {
             font-size: 0.8rem;
             font-weight: 500;
